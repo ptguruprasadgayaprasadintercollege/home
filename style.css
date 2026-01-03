@@ -219,7 +219,7 @@ button:hover {
 .main_bg {
     width: 100%;
     height: calc(600px);
-    background-image: url('/img/main_bg.jpg');
+    background-image: url('/images/main_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1135,4 +1135,5 @@ td {
 .coming_soon h1{
     font-family: "Roboto slab", sans-serif;
     text-shadow: rgb(95, 95, 95) 3px 3px 10px;
+
 }
