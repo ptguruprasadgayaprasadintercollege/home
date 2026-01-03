@@ -87,12 +87,12 @@ function showGallery(type) {
         ];
     } else if (type === "hostel") {
         images = [
-            "/images/hoste1.jpg",
-            "/images/hoste2.jpg",
-            "/images/hoste3.jpg",
-            "/images/hoste4.jpg",
-            "/images/hoste5.jpg",
-            "/images/hoste6.jpg"
+            "/images/hostel1.jpg",
+            "/images/hostel2.jpg",
+            "/images/hostel3.jpg",
+            "/images/hostel4.jpg",
+            "/images/hostel5.jpg",
+            "/images/hostel6.jpg"
         ];
     } else if (type === "playground") {
         images = [
@@ -137,3 +137,4 @@ function showGallery(type) {
         gallery.appendChild(imageElement);
     });
 }
+
