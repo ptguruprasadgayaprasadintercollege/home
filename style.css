@@ -1054,6 +1054,12 @@ textarea:placeholder-shown {
     text-align: center;
 }
 
+.achievement table {
+    max-width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
 .achievement th,
 td {
     width: 100%;
@@ -1136,5 +1142,6 @@ td {
     text-shadow: rgb(95, 95, 95) 3px 3px 10px;
 
 }
+
 
 
