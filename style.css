@@ -1,0 +1,1138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* for body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+    ::selection {
+        background: orange;
+        /* custom background */
+        color: white;
+        /* text color while selected */
+    }
+}
+
+
+/* css for scroll-bar only */
+/* Target the scrollbar track and thumb */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b3b3b3;
+    opacity: 0.1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d3d3b;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-clip: thumbnail_content-box;
+}
+
+
+a{
+    text-decoration: none;
+    width: 100%;
+}
+
+/* All heading styling */
+.heading {
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    color: peru;
+    background: #3d3d3d;
+    padding: 5px 0px 5px 0px;
+    text-shadow: black 5px 5px 10px;
+}
+
+.heading h1 {
+    box-shadow: black 0px -2px 5px;
+    font-family: "Roboto slab", sans-serif;
+}
+
+/* CSS for all img */
+.img {
+    text-align: center;
+}
+
+.img h3 {
+    color: rgb(40, 40, 40);
+    font-size: 25px;
+}
+
+.img img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+/* CSS for all button*/
+button {
+    margin-bottom: 10px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: rgb(171, 111, 51);
+    font-family: roboto slab;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #3d3d3d;
+    box-shadow: white 1px 1px 10px 0.5px;
+}
+
+/* Nav bar styling */
+.nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #3d3d3b;
+}
+
+.logo {
+    cursor: pointer;
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    column-gap: 15%;
+}
+
+.logo_name {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo_name span:nth-child(2) {
+    display: none;
+}
+
+.logo_name h1 {
+    font-family: "Roboto slab", sans-serif;
+    transition: 0.2s;
+    font-size: 30px;
+    text-shadow: black 5px 5px 4px;
+}
+
+.logo_name h1:hover {
+    font-size: 31px;
+}
+
+.logo img {
+    padding-left: 20px;
+    transition: 0.2s;
+    height: 100%;
+}
+
+.logo img:hover {
+    height: 110%;
+}
+
+.nav_icon {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav_bar Sidebar styling */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #3d3d3d;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 10000;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #575757;
+}
+
+/* Nav_bar slidebar Open button */
+
+.openbtn {
+    width: 80px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    z-index: 10001;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.openbtn:hover {
+    font-size: 32px;
+    font-weight: bold;
+    top: 3px;
+}
+
+#main {
+    transition: margin-left 0.3s;
+}
+
+/* Sticky class */
+.sticky {
+    position: fixed;
+    z-index: 10002;
+    right: 10px;
+}
+
+/* Main CSS */
+
+.main_bg {
+    width: 100%;
+    height: calc(600px);
+    background-image: url('/img/main_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    top: 50%;
+    color: white;
+    row-gap: 30px;
+
+}
+
+.main_text h1 {
+    font-family: "Roboto slab", sans-serif;
+    font-size: 65px;
+    color: rgb(248, 157, 67);
+    text-shadow: black 5px 5px 10px;
+    animation: up_words 5s;
+    animation-iteration-count: infinite;
+}
+
+.main_text h2 {
+    font-size: 60px;
+}
+
+.main_text p {
+    font-size: 20px;
+}
+
+.main_text button{
+    width: 150px;
+}
+
+.info {
+    width: 100%;
+    height: 400px;
+    background-color: #9f9f9f;
+}
+
+/* Video CSS section */
+
+.video {
+    width: 100%;
+    height: 800px;
+    background-color: #999;
+    overflow: hidden;
+    filter: contrast(0.5), brightness(0.7);
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CSS for welcome section */
+
+.welcome {
+    padding: 40px 50px 50px 80px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(40, 40, 40), rgba(200, 200, 200, 0.5));
+    display: flex;
+    column-gap: 20px;
+    height: 550px;
+}
+
+.welcome_img {
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome_img img {
+    position: relative;
+    height: 350px;
+    width: 500px;
+}
+
+.welcome_text {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    row-gap: 10px;
+    justify-content: center;
+    width: 60%;
+    row-gap: 20px;
+    animation: autoshow;
+    animation-timeline: view();
+}
+
+.welcome_text h1 {
+    font-size: 46px;
+}
+
+.welcome_text h3 {
+    font-size: 26px;
+}
+
+/* CSS for Principal Quotes */
+
+.p_quote {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.p_quote .p_quote_text {
+    padding-left: 20px;
+    width: 60%;
+    animation: come_out 1 forwards;
+    animation-timeline: view();
+    font-size: 30px;
+}
+
+.p_quote p {
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+}
+
+.p_quote .p_quote_text p:nth-child(2) {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p_quote_img {
+    height: 550px;
+}
+
+/* css for slidshow gallery section */
+
+.slide_section {
+    position: relative;
+    width: 100%;
+    background-color: #929292;
+}
+
+.slide {
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide .list .item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.slide .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* thumbail CSS */
+.thumbnail {
+    position: absolute;
+    bottom: 50px;
+    right: 3vw;
+    width: max-thumbnail_content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .item {
+    width: 100px;
+    height: 150px;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.thumbnail .item img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.thumbnail .item img:hover {
+    box-shadow: #f1f1f1 1px 1px 10px 5px;
+    cursor: pointer;
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Arrow CSS */
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    right: 55%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    transition: .5s;
+    gap: 10px;
+}
+
+.arrow button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgba(20, 20, 20, 0.6);
+    transition: 0.8s;
+}
+
+.arrow button:hover {
+    color: black;
+    background-color: rgba(250, 250, 250, 0.6);
+}
+
+.slide .list .item:nth-child(1) {
+    z-index: 1;
+}
+
+/* Create animation when next click */
+
+.slide.next .list .item:nth-child(1) img {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 10px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+/* Facilities CSS */
+
+.school_facilities_section {
+    width: 100%;
+    background-color: #a7a6a6;
+}
+
+.school_facilities {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px 40px 0px;
+    margin: 0px 0px -20px 0px;
+}
+
+.grid_box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-row: center;
+    align-items: center;
+    justify-items: center;
+    gap: 2px;
+}
+
+.f_box {
+    width: 100%;
+    min-width: 240px;
+    max-width: 300px;
+    height: 400px;
+    background-color: #575757;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f_box img {
+    margin: 6px 0px 15px 0px;
+    width: 95%;
+    height: 230px;
+    background-color: #999;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.f_box .text {
+    width: 100%;
+    height: 40%;
+    color: white;
+}
+
+.f_box .text h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 5px 0px;
+}
+
+.f_box .text p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+/* CSS for faculty page */
+
+.faculty_section {
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.administration {
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(40, 40, 40), rgba(200, 200, 200, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.administration h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 35px;
+    text-shadow: black 5px 5px 10px;
+}
+
+.administration .administration_box {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    column-gap: 2px;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.administration .img h3 {
+    font-size: 18px;
+}
+
+.administration .img p {
+    font-size: 14px;
+}
+
+.administration .administration_box .administration_img {
+    width: 60%;
+    max-width: 250px;
+    min-width: 200px;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px;
+    transition: 0.2s;
+}
+
+.administration .img:hover {
+    box-shadow: white 1px 1px 15px 5px;
+
+}
+
+/* CSS for Faculty section */
+
+.faculty {
+    width: 100%;
+    height: calc(100% + 80px);
+    background: linear-gradient(to bottom, rgb(73, 73, 73), rgba(200, 200, 200, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faculty .faculty_box {
+    margin: 30px;
+    width: 100%;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.faculty_lines {
+    width: 80%;
+    height: 5px;
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+}
+
+.faculty_btn {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.faculty_btn button {
+    width: 150px;
+    height: 40px;
+}
+
+.faculty_btn button:hover {
+    box-shadow: black 1px 1px 10px 3px;
+
+}
+
+.faculty .faculty_box .faculty_img {
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 1px 15px;
+    border-radius: 100px 100px 10px 10px;
+}
+
+.faculty .faculty_box .faculty_img img {
+    width: 190px;
+    height: 190px;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.faculty_img h1 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    text-shadow: none;
+}
+
+.faculty_img p {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+/* Footer CSS */
+
+.footer_content {
+    background: #3d3d3b;
+    padding: 0px 30px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+}
+
+.footer_link {
+    max-width: 600px;
+    min-width: 400px;
+    height: 220px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: white 1px 1px 15px;
+}
+
+.footer_map {
+    width: 400px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: white 1px 1px 15px;
+}
+
+.footer_link h2 {
+    padding: 20px 0px 0px 20px;
+    font-family: "Roboto slab", sans-serif
+}
+
+.footer_link h3 {
+    font-family: "roboto slab";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer_link ul {
+    list-style: none;
+    padding: 15px 0px 0px 20px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.footer_link li {
+    padding-bottom: 7px;
+}
+
+.footer_link li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.footer_link li i {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.footer_section span {
+    width: 100%;
+    height: 50px;
+    background-color: #3d3d3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sidebar .social_media {
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.sidebar .social_media div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar .social_media div a i {
+    font-size: 25px;
+}
+
+.social_media {
+    padding-top: 5px;
+    width: 100%;
+    background-color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.social_media div a {
+    color: #fff;
+}
+
+.social_media div a i {
+    transition: 0.2s;
+    font-size: 28px;
+}
+
+footer .social_media div a i:hover {
+    font-size: 31px;
+    text-shadow: white 0.5px 0.5px 2px;
+}
+
+.social_media div:nth-child(1) a i:hover {
+    color: rgb(65, 255, 65);
+}
+
+.social_media div:nth-child(2) a i:hover {
+    color: rgb(53, 124, 255);
+}
+
+.social_media div:nth-child(3) a i:hover {
+    color: rgb(67, 206, 67);
+}
+
+.social_media div:nth-child(4) a i:hover {
+    color: rgb(255, 95, 26);
+}
+
+
+/* contact page CSS */
+
+.contact_section {
+    width: 100%;
+    background-color: #a7a6a6;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 0px 120px;
+}
+
+.contact_content {
+    padding: 30px 0px 30px 0px;
+}
+
+.contact_content h1 {
+    font-family: roboto slab;
+    text-shadow: 5px 5px 5px rgb(93, 93, 93);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.contact_content p {
+    font-size: 16px;
+}
+
+.contact_detail {
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    gap: 50px;
+}
+
+.contact_detail a{
+    color: #000;
+}
+
+.contact_detail h2 {
+    font-size: 22px;
+    margin: 10px 0px 10px 0px;
+}
+
+.contact_detail p{
+    margin: 5px 0px 5px 0px;
+}
+
+.contact_detail div{
+    padding: 0px 20px 20px 20px ;
+    border-radius: 10px;
+    width: 400px;
+    height: 120px;
+    box-shadow: 1px 1px 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact_detail div:hover{
+    box-shadow: white 1px 1px 15px 5px;
+}
+
+.input {
+    max-width: 900px;
+    min-width: 300px;
+    height: 90%;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.input :nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.input div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.input label {
+    font-size: 18px;
+}
+
+.input input,
+textarea {
+    width: 55%;
+    font-size: 16px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.input input:placeholder-shown {
+    padding: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+}
+
+textarea:placeholder-shown {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.input button.submit {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(171, 121, 68);
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/* CSS for gallery page */
+
+.gallery_section {
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(40, 40, 40), rgba(200, 200, 200, 0.5));
+    display: flex;
+    flex-direction: column;
+}
+
+.g_buttons {
+    padding: 50px 0px 0px 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g_buttons button {
+    background-color: #666666;
+    margin: 20px 10px 0px 10px;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    row-gap: 30px;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 75px 0px 75px 0px;
+}
+
+.gallery img {
+    width: 325px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+}
+
+/* FEE_section CSS */
+
+.fee_heading {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    font-size: 18px;
+    padding: 20px;
+    color: #3d3d3b;
+}
+
+.fee_section {
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.fee-table {
+    max-width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fee_section h1 {
+    padding-top: 20px;
+    font-size: 35px;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.fee-table th,
+.fee-table td {
+    border: 1px solid #ddd;
+    max-width: 120px;
+    min-width: 80px;
+    padding: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+}
+
+.fee-table th:nth-child(2) {
+    min-width: 220px;
+}
+
+
+.fee-table th {
+    background: #3d3d3d;
+    color: white;
+}
+
+.fee-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.fee-table tr:nth-child(1) {
+    background-color: #999;
+}
+
+.fee-table tr:nth-child(8) {
+    background-color: #999;
+}
+
+.fee-table tr:hover {
+    background: #a5a5a599;
+}
+
+.fee-table td:hover {
+    background-color: #999;
+}
+
+/* CSS for Achievement page */
+
+.achievement {
+    padding: 0px 0px 50px 0px;
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.achievement h1 {
+    padding: 20px 0px;
+    font-size: 35px;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.achievement th,
+td {
+    width: 100%;
+    max-width: 250px;
+    min-width: 100px;
+    padding: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+}
+
+.achievement table thead th {
+    max-width: 250px;
+    min-width: 100px;
+    height: 60px;
+}
+
+.achievement th:nth-child(3) {
+    min-width: 250px;
+}
+
+.achievement th {
+    background: #3d3d3d;
+    color: white;
+}
+
+.achievement tr {
+    background-color: #f2f2f2;
+    height: 35px;
+}
+
+.achievement tr .year_heading {
+    background-color: #999;
+    height: 10px;
+}
+
+.achievement tr .year_heading b {
+    padding-right: 90px;
+}
+
+.achievement tr:hover {
+    background: #a5a5a599;
+}
+
+.achievement td:hover {
+    background-color: #999;
+}
+
+/* CSS for admission page */
+
+.admission_section{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.admission_section img{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+/* coming_soon page css */
+
+.coming_soon{
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.coming_soon h1{
+    font-family: "Roboto slab", sans-serif;
+    text-shadow: rgb(95, 95, 95) 3px 3px 10px;
+}

@@ -1,0 +1,196 @@
+
+/* CSS for auto show text animation on scroll */
+.autoshow {
+    animation: autoshow both;
+    animation-timeline: view();
+}
+@keyframes autoshow {
+    0% {
+        opacity: 0; 
+        filter: blur(5px);
+        scale: 0;
+    }
+    50% {
+        opacity: 1;
+        scale: 1;
+        filter: blur(0.3px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.ani_blur {
+    animation: ani_img both;
+    animation-timeline: view(30% 10%);
+}
+@keyframes ani_img {
+    from {
+        filter: saturate(0) contrast(4) brightness(0.1) blur(5px);
+        opacity: 0;
+        scale: 0.5;
+        
+        translate: 0px 150px;
+    }
+    to {
+        filter: none;
+        opacity: 1;
+        scale: 1;
+        translate: 0px 0px;
+    }
+}
+
+
+@keyframes come_out {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.lenght {
+    animation: lenght both;
+    animation-timeline: view();
+}
+@keyframes lenght {
+
+    0% {
+        opacity: 0; 
+        filter: blur(5px);
+        transform: translateY(150px);
+        width: 10%;
+    }
+    40% {
+        filter: blur(0px);
+        padding-top: 20px ;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        width: 100%;
+    }
+}
+
+.up_words{
+    animation: up_words 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes up_words {
+    0% {
+        opacity: 0.1;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes showImage {
+    to {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.slide.next .thumbnail .item:nth-last-child(1) {
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+.slide.prev .list .item img {
+    z-index: 100;
+}
+
+@keyframes showThumbnail {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.slide.next .thumbnail {
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext {
+    from {
+        transform: translateX(100px);
+    }
+}
+
+/* prev click */
+.slide.prev .list .item:nth-child(2) {
+    z-index: 2;
+}
+
+.slide.prev .list .item:nth-child(2) img {
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    right: 3vw;
+}
+
+@keyframes outFrame {
+    to {
+        width: 100px;
+        height: 150px;
+        bottom: 50px;
+        right: calc(480px + 3vw);
+        border-radius: 10px;
+    }
+}
+
+.slide.prev .thumbnail .item:nth-child(1) {
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+.slide.next .arrow button,
+.slide.prev .arrow button {
+    pointer-events: stroke;
+    cursor: pointer;
+}
+
+/* time animation */
+.slide .time {
+    position: absolute;
+    z-index: 100;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    top: 0;
+}
+
+.slide.next .time,
+.slide.prev .time {
+    animation: runningTime 6s linear 1 forwards;
+}
+@keyframes runningTime {
+    from {
+        width: 100%
+    }
+    to {
+        width: 0
+    }
+}

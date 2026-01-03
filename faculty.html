@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGGIC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <link rel="stylesheet" href="amimation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <!-- <div class="faculty_section" id="faculty"> -->
+            <div class="heading">
+                <h1 class="autoshow">Administration & Our Faculty</h1>
+            </div>
+            <div class="administration">
+                <h1 class="autoshow">Administration</h1>
+                <div class="administration_box">
+                    <div class="administration_img img autoshow"><img src="/images/p.jpg" alt="principal"><h3>Mr. Ved Prakash Dwivedi </h3><p>(Principal)</p></div>
+                    <div class="administration_img img autoshow"><img src="/images/vp.jpg" alt="vice_principal"><h3>Mr. Moh. Irphan </h3><p>(Vice Principal)</p></div>
+                </div>
+            </div>
+            <div class="faculty administration">
+                <h1 class="autoshow">Our Faculty</h1>
+                <div class="faculty_box grid_box">
+                    <div class="faculty_img img autoshow"><img src="/images/f1.jpg"  alt="Faculty"><h1>Mr. Anupam Shukla</h1><p>( Physics )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f2.jpg"  alt="Faculty"><h1>Mr. Pavan Yadav</h1><p>( Biology )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f3.jpg"  alt="Faculty"><h1>Mr. Sant Ram</h1><p>( History )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f4.jpg"  alt="Faculty"><h1>Mr. Rohit</h1><p>( English Grammar )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f5.jpg"  alt="Faculty"><h1>Mr. Mohan Mishra</h1><p>( Hindi )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f6.jpg"  alt="Faculty"><h1>Mr. Yaman Tiwari</h1><p>( Chemestry )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f7.jpg"  alt="Faculty"><h1>Mr. Moh. Amas</h1><p>( Maths )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f8.jpg"  alt="Faculty"><h1>Mr. Shiva</h1><p>( English )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f9.jpg"  alt="Faculty"><h1>Mr. Abhishek</h1><p>( Biology )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f10.jpg" alt="Faculty"><h1>Mr. RamPrakash</h1><p>( Social Studies )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f11.jpg" alt="Faculty"><h1>Mr. ShivSankar</h1><p>( Sanskrit )</p><div class="text"></div></div>
+                    <div class="faculty_img img autoshow"><img src="/images/f12.jpg" alt="Faculty"><h1>Mr. Lokesh Dikshit</h1><p>( Computer )</p><div class="text"></div></div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </main>
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

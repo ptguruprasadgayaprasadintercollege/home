@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGGIC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <link rel="stylesheet" href="amimation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="contact_section">
+            <div class="contact_content">
+                <h1>Contact Us</h1>
+                <p>If you have any questions, suggestions, or inquiries, please feel free to reach out to us using the
+                    contact information provided below. We value your feedback and look forward to hearing from you!</p>
+            </div>
+            <div class="input">
+                <form onsubmit="sendEmail(); reset(); return false;" class="contact">
+                    <div>
+                        <h1 class="msg">Send a message</h1>
+                    </div>
+                    <div><label class="input" for="username"> Enter your name :-</label>
+                        <input class="in" type="text" name="username" id="username" placeholder=" Username" required>
+                    </div>
+                    <div><label class="input" for="contact_number">Enter your number :-</label>
+                        <input class="in" type="tel" name="contact_number" id="contact_number"
+                            placeholder=" +91 9123456789" required>
+                    </div>
+                    <div><label class="input" for="email">Enter E-mail address :-</label>
+                        <input class="in" type="email" name="email" id="email" placeholder=" xyz123@gmail.com" required>
+                    </div>
+                    <div><label class="input" for="comment">Feedback :-</label>
+                        <textarea class="in" name="comment" id="comment" rows="4" placeholder=" Feedback"></textarea>
+                    </div>
+                    <div><a href="contact.html"><button class="submit" type="submit">Submit</button></a></div>
+                </form>
+            </div>
+            <div class="contact_detail">
+                <div>
+                    <h2>School Office Number</h2>
+                    <p><b>Mr. Ajay Sir :- </b><a href="tel:+91 9696703790"> +91 9696703790</a></p>
+                    <p><b>Mr. Mhd Irphan Sir :- </b><a href="tel:+91 8756353347"> +91 8756353347</a></p>
+                </div>
+                <div>
+                    <h2>Hostal Contact Number</h2>
+                    <p><b>Hostel Incharge :- </b> <a href="tel:+91 9876543210"> +91 9876543210</a></p>
+                    <p><b>Hostel :- </b> <a href="tel:+91 9876543210"> +91 9876543210 </a></p>
+                </div>
+                <div>
+                    <h2>Transportation Contact Number</h2>
+                    <p><b>Transport Incharge :- </b> <a href="tel:+91 9876543210"> +91 9876543210</a></p>
+                    <p><b>Driver Helpline :- </b> <a href="tel:+91 9876543210" >+91 9876543210</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
