@@ -850,7 +850,7 @@ footer .social_media div a i:hover {
     padding: 0px 20px 20px 20px ;
     border-radius: 10px;
     width: 400px;
-    height: 120px;
+    height: 150px;
     box-shadow: 1px 1px 10px;
     display: flex;
     flex-direction: column;
@@ -1135,9 +1135,11 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 30px;
 }
 .coming_soon h1{
+    text_align: center;
     font-family: "Roboto slab", sans-serif;
     text-shadow: rgb(95, 95, 95) 3px 3px 10px;
 }
+
