@@ -1062,13 +1062,13 @@ textarea:placeholder-shown {
 
 .achievement th,
 td {
-    width: 100%;
     max-width: 250px;
     min-width: 100px;
     padding: 5px;
     text-align: center;
     flex-wrap: wrap;
     overflow-x: visible;
+    border: 1px solid #ddd;
 }
 
 .achievement table thead th {
@@ -1105,7 +1105,7 @@ td {
 }
 
 .achievement td:hover {
-    background-color: #999;
+    background-color: #aaa9a9;
 }
 
 /* CSS for admission page */
@@ -1140,8 +1140,4 @@ td {
 .coming_soon h1{
     font-family: "Roboto slab", sans-serif;
     text-shadow: rgb(95, 95, 95) 3px 3px 10px;
-
 }
-
-
-
