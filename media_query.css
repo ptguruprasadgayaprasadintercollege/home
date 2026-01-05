@@ -37,6 +37,7 @@
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media only screen and (max-width: 870px) {
@@ -112,6 +113,18 @@
 
     .contact_section {
         padding: 20px 20px 0px 40px;
+    }
+
+    .contact_detail_outer .contact_img img {
+        margin-left: -100px;
+        margin-top: 80px;
+        height: 400px;
+        transition: 0.5s;
+    }
+
+    .contact_detail_outer .contact_img img:hover {
+        margin-top: 30px;
+        height: 450px;
     }
 }
 
@@ -198,6 +211,31 @@
         height: 450px;
         object-fit: cover;
     }
+
+    .contact_detail_outer .contact_img img {
+        margin-left: -150px;
+    }
+
+    .info {
+        height: 350px;
+    }
+
+    .info img {
+        min-width: 315px;
+    }
+
+    .info_text p {
+        font-size: 28px;
+    }
+
+    .info_text div {
+        justify-content: start;
+    }
+
+    .info_text div button {
+        font-size: 21px;
+    }
+
 }
 
 @media only screen and (max-width: 615px) {
@@ -233,6 +271,35 @@
 
     .welcome_text p {
         font-size: 15px;
+    }
+
+    .info {
+        height: 300px;
+    }
+
+    .info img {
+        bottom: 5px;
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        min-width: 220px;
+        padding-left: 0px;
+    }
+
+    .info_text{
+        margin-left: 255px;
+    }
+
+    .info_text p {
+        font-size: 22px;
+    }
+
+    .info_text div {
+        justify-content: start;
+    }
+
+    .info_text div button {
+        font-size: 20px;
     }
 
     .slide {
@@ -350,6 +417,114 @@
         object-position: top;
     }
 
+    .contact_detail_outer {
+        height: 400px;
+    }
+
+    .contact_detail_outer .contact_img img {
+        margin-left: -100px;
+        margin-top: 100px;
+        height: 300px;
+    }
+
+    .contact_detail_outer .contact_img img:hover {
+        margin-top: 70px;
+        height: 330px;
+    }
+
+    .contact_detail h2 {
+        font-size: 18px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .contact_detail p {
+        font-size: 14px;
+        margin: 2px 0px 2px 0px;
+    }
+
+    .contact_detail div {
+        width: 300px;
+        height: 100px;
+    }
+
+}
+
+/* for IQOO12 */
+
+@media only screen and (max-width: 520px) {
+    .contact_detail_outer {
+        height: 320px;
+    }
+
+    .contact_detail_outer .contact_img img {
+        margin-left: -60px;
+        margin-top: 70px;
+        height: 250px;
+    }
+
+    .contact_detail_outer .contact_img img:hover {
+        margin-top: 40px;
+        height: 280px;
+    }
+
+    .contact_detail h2 {
+        font-size: 16px;
+        margin: 8px -10px 5px -10px;
+    }
+
+    .contact_detail p {
+        font-size: 12px;
+        margin: 2px -10px 2px -10px;
+    }
+
+    .contact_detail div {
+        width: 250px;
+        height: 75px;
+        margin: 0px -10px 0px -15px;
+    }
+        .info {
+        height: 300px;
+    }
+
+    .info img {
+        bottom: -200px;
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        min-width: 220px;
+        padding-left: 0px;
+    }
+
+    .info_text{
+        margin-left: 255px;
+    }
+
+    .info_text p {
+        font-size: 22px;
+    }
+
+    .info_text div {
+        justify-content: start;
+    }
+
+    .info_text div button {
+        font-size: 20px;
+    }
+
+    .slide {
+        width: 100%;
+        height: 350px;
+    }
+
+    .thumbnail .item {
+        width: 60px;
+        height: 80px;
+    }
+
+    .slide.next .list .item:nth-child(1) img {
+        width: 60px;
+        height: 80px;
+    }
 }
 
 /* CSS for large mobile */
@@ -372,6 +547,28 @@
     }
 
     .main_text p {
+        font-size: 18px;
+    }
+
+    .info {
+        height: 220px;
+    }
+
+    .info img {
+        min-width: 180px;
+    }
+
+    .info_text p {
+        font-size: 20px;
+    }
+
+    .info_text div {
+        justify-content: start;
+    }
+
+    .info_text div button {
+        width: 140px;
+        height: 40px;
         font-size: 18px;
     }
 
@@ -417,6 +614,7 @@
     .gallery {
         margin: 30px 0px;
     }
+
 }
 
 @media only screen and (max-width: 376px) {
@@ -424,11 +622,11 @@
         grid-template-columns: 1fr;
     }
 
-    .welcome_img{
+    .welcome_img {
         width: 300px;
     }
 
-    .welcome_img img{
+    .welcome_img img {
         width: 300px;
     }
 
