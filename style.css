@@ -35,7 +35,7 @@
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -85,10 +85,11 @@ button {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 button:hover {
+    border: solid 1px white;
     background-color: #3d3d3d;
     box-shadow: white 1px 1px 10px 0.5px;
 }
@@ -261,7 +262,7 @@ button:hover {
     font-size: 20px;
 }
 
-.main_text button{
+.main_text button {
     width: 150px;
 }
 
@@ -293,7 +294,7 @@ button:hover {
     color: rgb(40, 40, 40);
 }
 
-.info_text div{
+.info_text div {
     width: 100%;
     height: 80px;
     display: flex;
@@ -301,7 +302,7 @@ button:hover {
     align-items: center;
 }
 
-.info_text div button{
+.info_text div button {
     width: 160px;
     height: 50px;
     font-size: 22px;
@@ -311,7 +312,7 @@ button:hover {
 
 /* Video CSS section */
 
-.video {
+/* .video {
     width: 100%;
     height: 800px;
     background-color: #999;
@@ -323,7 +324,7 @@ button:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 /* CSS for welcome section */
 
@@ -597,7 +598,7 @@ button:hover {
 }
 
 .administration h1 {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     padding-top: 20px;
     font-size: 35px;
@@ -632,9 +633,10 @@ button:hover {
     transition: 0.2s;
 }
 
-.administration .img:hover {
-    box-shadow: white 1px 1px 15px 5px;
-
+.administration .administration_box .administration_img:hover {
+    border: solid 2px  white;
+    box-shadow: rgb(195, 195, 195) 1px 1px 25px 3px;
+    transform: scale(1.05);
 }
 
 /* CSS for Faculty section */
@@ -865,38 +867,38 @@ footer .social_media div a i:hover {
     font-size: 16px;
 }
 
-.contact_detail_outer{
+.contact_detail_outer {
     width: 100%;
     height: 480px;
     display: flex;
 }
 
-.contact_detail_outer .contact_img{
+.contact_detail_outer .contact_img {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.contact_detail_outer .contact_img img{
+.contact_detail_outer .contact_img img {
     margin-left: -100px;
     margin-top: 30px;
     height: 450px;
     transition: 0.5s;
 }
 
-.contact_detail_outer .contact_img img:hover{
+.contact_detail_outer .contact_img img:hover {
     margin-top: 0px;
     height: 480px;
 }
 
 .contact_detail {
-    padding: 25px 0px 0px 0px ;
+    padding: 25px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.contact_detail a{
+.contact_detail a {
     color: #000;
 }
 
@@ -905,12 +907,12 @@ footer .social_media div a i:hover {
     margin: 10px 0px 10px 0px;
 }
 
-.contact_detail p{
+.contact_detail p {
     margin: 5px 0px 5px 0px;
 }
 
-.contact_detail div{
-    padding: 0px 20px 20px 20px ;
+.contact_detail div {
+    padding: 0px 20px 20px 20px;
     border-radius: 10px;
     width: 400px;
     height: 120px;
@@ -921,7 +923,7 @@ footer .social_media div a i:hover {
     transition: 0.5s;
 }
 
-.contact_detail div:hover{
+.contact_detail div:hover {
     box-shadow: white 1px 1px 15px 5px;
 }
 
@@ -1177,7 +1179,7 @@ td {
 
 /* CSS for admission page */
 
-.admission_section{
+.admission_section {
     width: 100%;
     padding: 40px 0px;
     display: flex;
@@ -1187,7 +1189,7 @@ td {
     gap: 30px;
 }
 
-.admission_section img{
+.admission_section img {
     width: 300px;
     height: 450px;
     object-fit: cover;
@@ -1196,7 +1198,7 @@ td {
 
 /* coming_soon page css */
 
-.coming_soon{
+.coming_soon {
     width: 100%;
     height: 500px;
     display: flex;
@@ -1204,7 +1206,8 @@ td {
     align-items: center;
     font-size: 30px;
 }
-.coming_soon h1{
+
+.coming_soon h1 {
     /* text-align: center; */
     font-family: "Roboto slab", sans-serif;
     text-shadow: rgb(95, 95, 95) 3px 3px 10px;
