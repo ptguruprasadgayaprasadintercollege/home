@@ -508,12 +508,15 @@
     }
 
     .teacher-card {
-        width: 180px;
+        width: 170px;
         height: 280px;
+        margin-bottom: 20px;
     }
-
+    
     .teachers-grid {
+        padding-top: 20px;
         gap: 15px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .teacher-card img {
@@ -526,7 +529,7 @@
         color: white;
         text-align: left;
         text-align: center;
-        width: 200px;
+        width: 170px;
         height: 60px;
     }
 
@@ -626,7 +629,6 @@
     .gallery {
         margin: 30px 0px;
     }
-
 }
 
 @media only screen and (max-width: 376px) {
