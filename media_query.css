@@ -367,6 +367,10 @@
         height: 170px;
     }
 
+   .faculty_lines{
+    height: 40px;
+   }
+
     .administration .administration_box {
         height: 100%;
         grid-template-columns: 1fr;
