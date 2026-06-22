@@ -249,16 +249,16 @@
     }
 
     .welcome_img {
-        width: 400px;
+        width: 380px;
     }
 
     .welcome_img img {
         height: 100%;
-        width: 400px;
+        width: 380px;
     }
 
     .welcome_text {
-        width: 400px;
+        width: 380px;
     }
 
     .welcome_text h1 {
@@ -283,9 +283,6 @@
         min-width: 220px;
         margin: 20px 0px 0px 0px;
         padding-left: 0;
-    }
-
-    .info_text{
     }
 
     .info_text p {
@@ -338,7 +335,7 @@
     .f_box {
         width: 100%;
         min-width: 150px;
-        max-width: 210px;
+        max-width: 200px;
         height: 320px;
     }
 
@@ -381,7 +378,7 @@
 
     .p_quote {
         flex-direction: column;
-        height: 600px;
+        height: 650px;
         gap: 10px;
     }
 
@@ -404,8 +401,8 @@
         height: 350px;
         padding-left: 50px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: end;
+        justify-content: end;
     }
 
     .p_quote_img img {
@@ -414,6 +411,8 @@
         object-fit: cover;
         object-position: top;
     }
+
+    /* contact section */
 
     .contact_detail_outer {
         height: 400px;
@@ -507,6 +506,34 @@
         width: 60px;
         height: 80px;
     }
+
+    .teacher-card {
+        width: 180px;
+        height: 280px;
+    }
+
+    .teachers-grid {
+        gap: 15px;
+    }
+
+    .teacher-card img {
+        width: 100px;
+        height: 100px;
+        margin: 8px;
+    }
+
+    .teacher-card .teacher-info {
+        color: white;
+        text-align: left;
+        text-align: center;
+        width: 200px;
+        height: 60px;
+    }
+
+    .teacher-card .teacher-actions button {
+        width: 160px;
+    }
+
 }
 
 /* CSS for large mobile */
@@ -543,7 +570,7 @@
         min-width: 180px;
     }
 
-    .info_text{
+    .info_text {
         row-gap: 0px;
     }
 
@@ -622,7 +649,7 @@
         font-size: 18px;
     }
 
-    .info_text{
+    .info_text {
         padding: 20px 5px 0px 0px;
     }
 
@@ -632,7 +659,8 @@
         font-size: 18px;
     }
 
-    .welcome_img {
+    .welcome_img,
+    .welcome_text {
         width: 300px;
     }
 
