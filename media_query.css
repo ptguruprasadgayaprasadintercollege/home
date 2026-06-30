@@ -367,9 +367,9 @@
         height: 170px;
     }
 
-   .faculty_lines{
-    height: 40px;
-   }
+    .faculty_lines {
+        height: 40px;
+    }
 
     .administration .administration_box {
         height: 100%;
@@ -516,7 +516,7 @@
         height: 280px;
         margin-bottom: 20px;
     }
-    
+
     .teachers-grid {
         padding-top: 20px;
         gap: 15px;
@@ -634,8 +634,22 @@
         margin: 30px 0px;
     }
 
-    .contact_detail_outer .contact_detail{
+    .contact_detail_outer .contact_detail {
         margin-left: 15px;
+    }
+
+    .contact_detail_outer .contact_img img {
+        margin-left: -30px;
+        margin-top: 100px;
+        width: 180px;
+        height: 220px;
+    }
+
+    .contact_detail_outer .contact_img img:hover{
+        margin-left: -33px;
+        margin-top: 95px;
+        width: 183px;
+        height: 225px;
     }
 }
 
